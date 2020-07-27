@@ -1,0 +1,27 @@
+{
+  "name": "mup-redis-oplog",
+  "version": "0.0.1",
+  "description": "Plugin for Meteor Up to setup and run Redis when using Redis Oplog",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "author": "johannel00",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johannel00/mup-redis-oplog.git"
+  },
+  "keywords": [
+    "meteor-up",
+    "redis"
+  ],
+  "homepage": "https://github.com/johannel00/mup-redis-oplog",
+  "bugs": "https://github.com/johannel00/mup-redis-oplog/issues",
+  "dependencies": {
+    "joi": "^10.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1"
+  }
+}
