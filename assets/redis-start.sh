@@ -17,9 +17,10 @@ echo "Starting redis:$REDIS_VERSION"
 
 sudo docker run \
   -d \
-  --restart=always \
-  --publish=127.0.0.1:6379:6379 \
+  --publish 127.0.0.1:6379:6379 \
+  --restart unless-stopped \
   --volume $REDIS_DIR/data:/data \
-  --name=redis \
+  --volume $REDIS_DIR/redis.conf:/redis.conf \
+  --name redis \
   redis:$REDIS_VERSION \
-  redis-server --appendonly yes
+  redis-server /redis.conf --appendonly yes
